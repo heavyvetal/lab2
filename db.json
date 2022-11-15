@@ -1,1 +1,20 @@
-[{"id":0,"username":"Jane","content":"Typography helps you engage your audience and establish a distinct, unique personality on your website. Knowing how to use fonts to build character in your design is a powerful skill, and exploring the history and use of typefaces, as well as typogra...","created_at":"2022-10-24 17:28:15"},{"id":1,"username":"Jack","content":"Typography helps you engage your audience and establish a distinct, unique personality on your website. Knowing how to use fonts to build character in your design is a powerful skill, and exploring the history and use of typefaces, as well as typogra...","created_at":"2022-10-24 17:28:15"}]
+[
+  {
+    "id": 0,
+    "username": "Jane",
+    "content": "C3 / Mobile game. <br>How do I put text on the 3D layer and make it 'sit up straight' - for lack of a better term.I need the text to update as the scores (variables) update, so it can't be a static image on a box.I have a 3D box and it's in the game, now I just need to get the text to stick to it - upright.<br>Thank you",
+    "created_at": "2022-10-24 17:28:15"
+  },
+  {
+    "id": 1,
+    "username": "James",
+    "content": "Do you want to display the score in the 3D environment or just have the score displayed on a HUD overlay? For the latter, use the method I described earlier. If you want to have text rendered in 3D, well, that's another story. As you pointed out correctly, you can only use sprites, tiled backgrounds and 9-patches a source textures for 3d shapes.",
+    "created_at": "2022-10-24 17:38:15"
+  },
+  {
+    "id": 2,
+    "username": "Jane",
+    "content": "Thank you for your reply.I think I'm missing something, how would that get the text on the 3D boxes that are around the screen? The 3D boxes are around the outside of the layout. The text needs to be on the boxes to show the scores so the player sees the text on the box. When the player looks away from the box, the player will no longer see the text.",
+    "created_at": "2022-10-24 17:48:15"
+  }
+]

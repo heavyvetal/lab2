@@ -1,21 +1,10 @@
 <?php
 
-/*
-require_once 'db.php';
-
-$db = new Sqli('localhost', 'root', '', 'lab2');
-$db->connect();
-
-$raw_posts = $db->query("SELECT * FROM `posts`");
-while ($post = mysqli_fetch_assoc($raw_posts)) {
-    $posts[] = $post;
-}
-*/
-
 $isAdmin = false;
 
-if ((isset($_GET['login']) && isset($_GET['password'])) && (
-        $_GET['login'] == 'admin' && $_GET['password'] == 'admin')
+if (
+    isset($_GET['login']) && isset($_GET['password']) &&
+    $_GET['login'] == 'admin' && $_GET['password'] == 'admin'
 ) {
     $isAdmin = true;
 }
@@ -92,9 +81,6 @@ $posts = json_decode(file_get_contents('db.json'), true);
 
 </head>
 <body>
-<header>
-
-</header>
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-8">
@@ -207,7 +193,6 @@ $posts = json_decode(file_get_contents('db.json'), true);
                     <p class="smal">Voting ends on 19th of October</p>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

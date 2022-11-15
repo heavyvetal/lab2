@@ -33,18 +33,10 @@ if (isset($_POST['id'])) {
         $postsJSON = json_encode($posts);
 
         $response = 'The post was succefully removed';
-
-        try {
-            file_put_contents('db.json', $postsJSON);
-        } catch (Exception $e){
-            $response = $e->getMessage();
-        }
-
-        echo $response;
     }
 
     try {
-        file_put_contents('db.json', $postsJSON);
+        //file_put_contents('db.json', $postsJSON);
     } catch (Exception $e){
         $response = $e->getMessage();
     }

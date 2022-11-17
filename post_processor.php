@@ -36,7 +36,7 @@ if (isset($_POST['id'])) {
     }
 
     try {
-        //file_put_contents('db.json', $postsJSON);
+        file_put_contents('db.json', $postsJSON);
     } catch (Exception $e){
         $response = $e->getMessage();
     }
